@@ -1,0 +1,29 @@
+{
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "node --conditions react-server server/server.js",
+    "build-and-start": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.25.9",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/register": "^7.25.9",
+    "babel-loader": "^9.2.1",
+    "express": "^4.21.1",
+    "react": "^19.0.0-rc-3da26163a3-20240704",
+    "react-dom": "^19.0.0-rc-3da26163a3-20240704",
+    "react-server-dom-webpack": "^19.0.0-rc-3da26163a3-20240704",
+    "webpack": "^5.96.1"
+  }
+}
